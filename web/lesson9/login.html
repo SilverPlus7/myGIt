@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>表单的应用</title>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+	</head>
+	
+	<body>
+		<table border=1 width="500" align="center">
+		<form name="frm" action="login.php" method="post" target="_blank">
+			<caption>表单的应用</caption>
+
+			<tr>
+				<th> 文本域</th>
+					<td>
+						<input type="text" name="name">
+					</td>
+
+			</tr>
+			<tr>
+				<th>密码域</th>
+					<td>
+						<input typy="password" name="password">
+					</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+				<input type="submit" name="sub" value='submit'>
+				<input type="button" name="clear" value="clear" onclick="document.frm.name.value=''">
+				
+			</tr>
+			<tr>
+				<th>multiSelect</th>
+				<td>
+					playGame<input type="checkbox" checked name="del[]">					seeMovie<input type="checkbox" name="del[]">
+					tor<input type="checkbox" name="del[]">
+				</td>
+			</tr>
+
+			<tr>
+				<th>sigle</th>
+				<td>
+					<input type="radio" name="sex">male
+					<input type="radio" checked name="sex">female
+					<input type="radio" name="sex">unknow
+				</td>
+			</tr>
+
+			<tr>
+				<input type="hiden" name="id" value="100">
+			</tr>
+			<tr>	
+				<th>上传</th>
+				<td>
+					<input type="file" name="pictrue">
+				</td>
+			</tr>	
+
+			<tr>
+				<th>dropDownList</th>
+				<td>
+					<select name = "gn">
+					<option value="0">--select--</option>
+					<option value="1">1111</option>
+					<option value="2">2222</option>
+					<option value="3" selected>3333</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>muti</th>
+				<td>
+					<textarea cols="40" rows="6" name="message">input your info</textarea>
+				</td>
+			</tr>
+		
+	</body>
+</html>
